@@ -2,7 +2,7 @@
     /*Cor-Primary*/
 
     --Softblue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+    --Cyan: hsla(178, 100%, 50%, 0.957);
 
     /*cor-Neutra*/
 
@@ -40,6 +40,15 @@ body {
     width: 300px;
 }
 
+.logo__card:hover{
+    content: url(images/icon-view.svg);
+    background-color: var(--Cyan);
+    width: 100%;
+    border-radius: 20px;
+    
+    
+}
+
 .logo__card img {
     padding: 15px;
     width: 100%;
@@ -47,65 +56,68 @@ body {
 }
 
 .info {
-    font-size: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0px 0px 5px 20px;
     color: var(--Softblue);
+    font-size: 18px;
 }
 
 .info a {
     text-decoration: none;
     color: var(--White);
-
 }
 
 .titulo__info {
     color: var(--White);
-    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: -30px;
 }
 
 .paragraph__info {
+    font-size: 18px;
     grid-column: span 2;
-    padding: 5px 0px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .tempo__info {
-    font-size: 15px;
-    padding: 5px;
+    padding-bottom: -20px;
 }
 
 .fraction__info {
-    font-size: 15px;
-    margin: 10px 3px 0px 0px;
+    font-size: 18px;
+    padding-bottom: -15px;
 }
 
 .fraction__info::before {
-    margin: 10px 3px 0px 10px;
+    margin: 10px 5px 0px 1px;
     content: url(images/icon-ethereum.svg);
 }
 
 .tempo__info::before {
     content: url(images/icon-clock.svg);
-    margin-left: -30px;
+    margin-left: 10px;
 }
 
 .perfil {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5px;
+    padding: 20px;
+    font-size: 18px;
+    grid-column: span 2;
 }
 
 .perfil__foto {
     border-radius: 20px;
     border: 1px solid #ffffff;
     width: 30px;
-    margin: 10px;
+    margin-left: -20px;
+    
 }
 
 .perfil__info {
-    display: flex;
-    flex-direction: row;
     font-size: 15px;
-    padding: 10px; }
+    padding-top: 7px;
+    margin-left: -100px;
+}
