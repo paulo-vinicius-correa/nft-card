@@ -79,6 +79,7 @@ body {
     font-size: 18px;
     grid-column: span 2;
     margin-bottom: 20px;
+    text-align:left;
 }
 
 .tempo__info {
@@ -88,6 +89,7 @@ body {
 .fraction__info {
     font-size: 18px;
     padding-bottom: -15px;
+    color: var(--Cyan);
 }
 
 .fraction__info::before {
