@@ -45,10 +45,12 @@ body {
 }
 
 .logo__card img {
+   position: relative;
     padding: 20px;
     width: 100%;
     border-radius: 30px;
 }
+
 
 .info {
     display: grid;
